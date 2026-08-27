@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>💖 My Fudge ❤️</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -45,7 +43,7 @@ h1{
     text-align:center;
     color:#d81b60;
     font-size:20px;
-    margin-bottom:30px;
+    margin-bottom:25px;
     font-weight:bold;
 }
 
@@ -62,11 +60,19 @@ h1{
     object-fit:cover;
     border-radius:18px;
     box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    transition:0.3s;
+    transition:all .3s ease;
 }
 
 .gallery img:hover{
     transform:scale(1.03);
+}
+
+.countdown{
+    text-align:center;
+    font-size:22px;
+    color:#e91e63;
+    margin-bottom:25px;
+    font-weight:bold;
 }
 
 .message{
@@ -94,22 +100,6 @@ h1{
     animation:heartFloat linear infinite;
 }
 
-@keyframes heartFloat{
-    0%{
-        transform:translateY(0);
-        opacity:0;
-    }
-
-    20%{
-        opacity:1;
-    }
-
-    100%{
-        transform:translateY(-120vh);
-        opacity:0;
-    }
-}
-
 .petal{
     position:fixed;
     top:-50px;
@@ -118,12 +108,24 @@ h1{
     animation:petalFall linear infinite;
 }
 
-@keyframes petalFall{
+@keyframes heartFloat{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
 
+@keyframes petalFall{
     0%{
         transform:translateY(-10vh) rotate(0deg);
     }
-
     100%{
         transform:translateY(120vh) rotate(360deg);
     }
@@ -144,10 +146,9 @@ h1{
     }
 
     .gallery img{
-        height:280px;
+        height:260px;
     }
 }
-
 </style>
 </head>
 
@@ -155,57 +156,142 @@ h1{
 
 <div class="card">
 
-<h1>💖 My Fudge ❤️</h1>
+    <h1>💖 My Fudge ❤️</h1>
 
-<div class="subtitle">
-🧵❤️ My Forever Ranga Nayaki ❤️🧵
+    <div class="subtitle">
+        🧵❤️ My Forever Ranga Nayaki ❤️🧵
+    </div>
+
+    <div class="countdown" id="countdown"></div>
+
+    <div class="gallery">
+        <img src="g
+        <img src="photo2.jpeg" alt.jpeg
+    </div>
+
+    <div class="message">
+
+        <p>
+        ✨ As we celebrate this special September 8th, I look back and wonder how I got so lucky to have you in my life. Every memory we've made together has become a treasure that I hold close to my heart. 💎🖤
+        </p>
+
+        <p>
+        🌷 Thank you for being my strength when I need support, my happiness when I need a smile, and my peace when life feels overwhelming. 🤗💖
+        </p>
+
+        <p>
+        💓 Every time I hear your voice, my heart feels the same excitement and warmth. No matter how much time passes, that feeling never changes. 🎶❤️
+        </p>
+
+        <p>
+        👑 When I asked you, "Will you be my Ranga Nayaki?", I was hoping for a beautiful future together. Today, I smile knowing that the dream I had then has become the life we're living now. 🥰✨
+        </p>
+
+        <p>
+        🧵❤️ I truly believe in the Red String of Fate, the invisible thread that connects two hearts meant to be together. No matter where life leads us, I feel that thread has always been guiding me towards you. 🖤
+        </p>
+
+        <p>
+        🌹 The way you care for me, understand me, and stand by my side makes me feel like the luckiest man in the world. Thank you for loving me so beautifully and unconditionally. ❤️🤍
+        </p>
+
+        <p>
+        😊🖤 Some of my favorite moments are the simplest ones, laughing together, sharing stories, and finding comfort in each other's presence. Those moments mean more to me than words can ever express.
+        </p>
+
+        <p>
+        🤝❤️ Through every challenge and every celebration, you've been my partner, my best friend, and the love of my life. I cherish every moment spent with you and look forward to creating countless more memories together. ✨
+        </p>
+
+        <p>
+        💘 My forever Ranga Nayaki, tied to my heart by an invisible red string, you are truly the most beautiful part of my life. ❤️🧵🖤
+        </p>
+
+        <p>
+        🌸 I wanted to love you for four seasons - Spring, Summer, Autumn, and Winter.
+        <br><br>
+        ☀️ Oh no... I wanted to love you for three days - Yesterday, Today, and Tomorrow.
+        <br><br>
+        🌙 Sorry! I wanted to love you for two times - Day and Night.
+        <br><br>
+        💞 No, that's still not enough...
+        <br><br>
+        ❤️ I want to love you for one day - Every Day. 🖤
+        </p>
+
+    </div>
+
+    <div class="footer">
+        🎉 Happy September 8th, My Love ❤️
+        <br><br>
+        💖 Forever Yours,
+        <br>
+        🖤 Mathan ❤️
+    </div>
+
 </div>
 
-<div class="gallery">
-    <img src="photo1.jpeg" alt="Memory 1">
-    <img src="photo2.jpegimg src="photo3.jpeg" alt="Memoryssage">
+<script>
 
-<p>
-✨ As we celebrate this special September 8th, I look back and wonder how I got so lucky to have you in my life. Every memory we've made together has become a treasure that I hold close to my heart. 💎🖤
-</p>
+// COUNTDOWN
 
-<p>
-🌷 Thank you for being my strength when I need support, my happiness when I need a smile, and my peace when life feels overwhelming. 🤗💖
-</p>
+const targetDate = new Date("September 8, 2026 00:00:00");
 
-<p>
-💓 Every time I hear your voice, my heart feels the same excitement and warmth. No matter how much time passes, that feeling never changes. 🎶❤️
-</p>
+function updateCountdown() {
+    const now = new Date();
+    const difference = targetDate - now;
 
-<p>
-👑 When I asked you, "Will you be my Ranga Nayaki?", I was hoping for a beautiful future together. Today, I smile knowing that the dream I had then has become the life we're living now. 🥰✨
-</p>
+    if(difference <= 0){
+        document.getElementById("countdown").innerHTML =
+        "❤️ Happy September 8th ❤️";
+        return;
+    }
 
-<p>
-🧵❤️ I truly believe in the Red String of Fate, the invisible thread that connects two hearts meant to be together. No matter where life leads us, I feel that thread has always been guiding me towards you. 🖤
-</p>
+    const days = Math.floor(difference / (1000*60*60*24));
+    const hours = Math.floor((difference % (1000*60*60*24)) / (1000*60*60));
+    const mins = Math.floor((difference % (1000*60*60)) / (1000*60));
 
-<p>
-🌹 The way you care for me, understand me, and stand by my side makes me feel like the luckiest man in the world. Thank you for loving me so beautifully and unconditionally. ❤️🤍
-</p>
+    document.getElementById("countdown").innerHTML =
+    `⏳ ${days} Days ${hours} Hours ${mins} Minutes Until Our Special Day`;
+}
 
-<p>
-😊🖤 Some of my favorite moments are the simplest ones, laughing together, sharing stories, and finding comfort in each other's presence. Those moments mean more to me than words can ever express.
-</p>
+updateCountdown();
+setInterval(updateCountdown,1000);
 
-<p>
-🤝❤️ Through every challenge and every celebration, you've been my partner, my best friend, and the love of my life. I cherish every moment spent with you and look forward to creating countless more memories together. ✨
-</p>
+// HEARTS
 
-<p>
-💘 My forever Ranga Nayaki, tied to my heart by an invisible red string, you are truly the most beautiful part of my life. ❤️🧵🖤
-</p>
+for(let i=0;i<30;i++){
 
-<p>
-🌸 I wanted to love you for four seasons - Spring, Summer, Autumn, and Winter.
-<br><br>
+    let heart=document.createElement("div");
 
-☀️ Oh no... I wanted to love you for three days - Yesterday, Today, and Tomorrow.
-<br><br>
+    heart.className="heart";
+    heart.innerHTML="❤️";
 
-🌙 Sorry! I wanted to love you for two times - Day and
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(20+Math.random()*25)+"px";
+    heart.style.animationDuration=(6+Math.random()*10)+"s";
+
+    document.body.appendChild(heart);
+}
+
+// ROSE PETALS
+
+for(let i=0;i<40;i++){
+
+    let petal=document.createElement("div");
+
+    petal.className="petal";
+    petal.innerHTML="🌹";
+
+    petal.style.left=Math.random()*100+"vw";
+    petal.style.fontSize=(18+Math.random()*12)+"px";
+    petal.style.animationDuration=(8+Math.random()*10)+"s";
+    petal.style.animationDelay=Math.random()*8+"s";
+
+    document.body.appendChild(petal);
+}
+
+</script>
+
+</body>
+</html>
